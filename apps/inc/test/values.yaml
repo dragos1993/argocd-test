@@ -1,0 +1,5 @@
+replicaCount: 2
+
+image:
+  repository: DOCKERHUB_USER/inc
+  tag: test-1.0.0

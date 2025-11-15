@@ -1,0 +1,9 @@
+replicaCount: 1
+
+image:
+  repository: DOCKERHUB_USER/ipv
+  tag: test-1.0.0
+
+service:
+  type: ClusterIP
+  port: 80

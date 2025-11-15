@@ -38,7 +38,10 @@ spec:
           securityContext:
             {{- toYaml . | nindent 12 }}
           {{- end }}
-          image: "image: {{ .Values.image.repository }}:{{ .Values.image.tag }}"
+
+          # ✅ FIXED IMAGE LINE
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http

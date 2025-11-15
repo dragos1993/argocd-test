@@ -1,5 +1,10 @@
-replicaCount: 3
+replicaCount: 1
 
 image:
-  repository: DOCKERHUB_USER/inc
-  tag: latest
+  repository: dragos93/argocd-test
+  tag: inc-pod
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80

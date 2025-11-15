@@ -1,8 +1,8 @@
 replicaCount: 1
 
 image:
-  repository: DOCKERHUB_USER/prodr
-  tag: prod-1.0.0
+  repository: dragos93/argocd-test
+  tag: prodr-test
 
 service:
   type: ClusterIP
